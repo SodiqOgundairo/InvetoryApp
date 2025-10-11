@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django = "*"
 django-crispy-forms = "*"
-crispy-tailwind = "*"
+crispy-bootstrap5 = "*"
 
 [dev-packages]
 

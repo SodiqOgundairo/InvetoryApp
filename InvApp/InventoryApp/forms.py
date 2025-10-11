@@ -5,7 +5,7 @@ from .models import Product
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        field = '__all__'
+        fields = '__all__'
         labels = {
             'product_id': 'Product ID',
             'name': 'Name',
@@ -16,25 +16,25 @@ class ProductForm(forms.ModelForm):
         }
         widgets = {
             'product_id': forms.NumberInput(
-                attrs={'placeholder': 'e.g 1', 'class': 'block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'}
+                attrs={'placeholder': 'e.g 1', 'class': 'form-control'}
             ),
             'name': forms.TextInput(
                 attrs={'placeholder': 'e.g. shirt',
-                       'class': 'block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'}
+                       'class': 'form-control'}
             ),
             'sku': forms.TextInput(
                 attrs={'placeholder': 'e.g. S12345',
-                       'class': 'block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'}
+                       'class': 'form-control'}
             ),
             'price': forms.NumberInput(
                 attrs={'placeholder': 'e.g. 19.99',
-                       'class': 'block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'}
+                       'class': 'form-control'}
             ),
             'quantity': forms.NumberInput(
-                attrs={'placeholder': 'e.g. 10', 'class': 'block w-full px-3 py-2     border border-gray-300 rounded-md shadow-sm focus:outline-none        focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'}
+                attrs={'placeholder': 'e.g. 10', 'class': 'form-control'}
             ),
-            'suplier': forms.TextInput(
+            'supplier': forms.TextInput(
                 attrs={'placeholder': 'e.g. ABC Corp',
-                       'class': 'block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'}
+                       'class': 'form-control'}
             ),
         }

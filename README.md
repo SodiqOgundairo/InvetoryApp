@@ -1,2 +1,3 @@
 # InvetoryApp
-Built with Django, &amp; Tailwind
+
+Built with Django, &amp; Bootstrap
