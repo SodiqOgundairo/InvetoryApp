@@ -66,7 +66,7 @@ def register_view(request):
                 user = User.objects.create_user(
                     username=username, password=password)
                 login(request, user)
-                return redirect('auth')
+                return redirect('home')
         else:
             form.add_error(None, "Username and Password required!")
     else:
@@ -83,7 +83,7 @@ def login_view(request):
         if user is not None:
             login(request, user)
             next_url = request.POST.get(
-                'next') or request.GET.get('next') or 'auth'
+                'next') or request.GET.get('next') or 'home'
             return redirect(next_url)
         else:
             error_message = "Invalid Credentials!"

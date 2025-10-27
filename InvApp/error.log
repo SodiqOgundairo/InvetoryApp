@@ -1,0 +1,11 @@
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/jules/.local/share/virtualenvs/app-4PlAip0Q/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jules/.local/share/virtualenvs/app-4PlAip0Q/lib/python3.12/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/home/jules/.local/share/virtualenvs/app-4PlAip0Q/lib/python3.12/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view InventoryApp.views.login_view didn't return an HttpResponse object. It returned None instead.
+"GET /login/ HTTP/1.1" 500 64318
