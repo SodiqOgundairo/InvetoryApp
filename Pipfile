@@ -7,8 +7,10 @@ name = "pypi"
 django = "*"
 django-crispy-forms = "*"
 crispy-bootstrap5 = "*"
+gunicorn = "*"
+playwright = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.13"
+python_version = "3.12"
